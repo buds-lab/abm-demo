@@ -4,9 +4,9 @@ BUDSLab weekly presentation given by [Matias Quintana](https://matiasquintana.co
 
 # Content
 
-- `docs/`: Slides used in the presentation
-- `env/`: Conda environment
-- `openai-gym`: openAI python examples
+- `docs/`: Slides used in the presentation.
+- `env/`: Conda environment.
+- `openai-gym/`: openAI python examples. Explanation about the contentes is given on slide 22 of the presentation.
 
 # Requirements
 
