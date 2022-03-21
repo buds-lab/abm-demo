@@ -10,7 +10,7 @@ BUDSLab weekly presentation given by [Matias Quintana](https://matiasquintana.co
 
 # Requirements
 
-Using conda: Install the requirements with either of the commands:
+Using conda:
 
 ```
 conda env create --file env/environment.yaml
