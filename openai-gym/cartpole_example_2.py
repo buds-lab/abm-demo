@@ -6,14 +6,18 @@ env.reset()
 
 # a new concept arrived! an "episode" one full run of the simulationself.
 # this changes depending on the problem and can be defined however we want
-EPISODES = 20
-for i_episode in range(EPISODES):
+episodes = 10000
+num_steps = 100
+log_interval = 10
+running_reward = 10
+
+for i_episode in range(episodes):
     # every episode is a new start, or a great start
-    observation = env.reset()
+    observation, episode_reward = env.reset(), 0
+
     # here we define how long the episode will run, say 100 "time-steps"
-    for t in range(100):
+    for t in range(num_steps):
         env.render()  # we are all visual people, let's see the actual cartpole
-        print(observation)
         # let's still take random actions!
         action = env.action_space.sample()
         # remember that `step` is one of the very important functions!
@@ -34,7 +38,16 @@ for i_episode in range(EPISODES):
         # done: has the episode finished?
         # info: useful for debinning
         observation, reward, done, info = env.step(action)
+        episode_reward += reward
+
         if done:
-            print("Episode finished after {} timesteps".format(t+1))
             break
+
+    running_reward = 0.05 * episode_reward + (1 - 0.05) * running_reward
+
+    if i_episode % log_interval == 0:
+        print("Observations: {}".format(observation))
+        print("Episode {}\tLast reward: {:.2f}\tAverage reward: {:.2f}".format(
+            i_episode, episode_reward, running_reward))
+
 env.close()

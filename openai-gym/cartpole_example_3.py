@@ -84,16 +84,16 @@ gamma = 0.99
 # a new concept arrived! an "episode" one full run of the simulationself.
 # this changes depending on the problem and can be defined however we want
 num_steps = 10000
-simple_actions = False # TODO: change!
-
 episodes = 10000
 log_interval = 10
 running_reward = 10
+simple_actions = False # TODO: change!
 
 for i_episode in range(episodes):
     # every episode is a new start, or a great start
     observation, episode_reward = env.reset(), 0
     probs = []
+
     # here we define how long the episode will run, say "num_steps"
     for t in range(num_steps + 1):
         env.render()  # we are all visual people, let's see the actual cartpole
@@ -132,7 +132,7 @@ for i_episode in range(episodes):
         finish_episode(model)
 
     if i_episode % log_interval == 0:
-        print('Episode {}\tLast reward: {:.2f}\tAverage reward: {:.2f}'.format(
+        print("Episode {}\tLast reward: {:.2f}\tAverage reward: {:.2f}".format(
             i_episode, episode_reward, running_reward))
 
     if running_reward > env.spec.reward_threshold:
