@@ -1,6 +1,12 @@
 # Agent-Based Modeling workshop, 2022-03-24
 
-BUDSLab weekly presentation given by Matias Quintana
+BUDSLab weekly presentation given by [Matias Quintana](https://matiasquintana.com/)
+
+# Content
+
+- `docs/`: Slides used in the presentation
+- `env/`: Conda environment
+- `openai-gym`: openAI python examples
 
 # Requirements
 
