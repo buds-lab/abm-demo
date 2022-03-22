@@ -4,7 +4,7 @@ import gym
 env = gym.make('CartPole-v0')
 env.reset()
 
-# a new concept arrived! an "episode" one full run of the simulationself.
+# a new concept arrived! an "episode" one full run of the simulation.
 # this changes depending on the problem and can be defined however we want
 episodes = 10000
 num_steps = 100
@@ -25,7 +25,7 @@ for i_episode in range(episodes):
         # important function to pay attention to.
 
         # observation: states of the environment after performing `action`
-        #   For the cartpoke problem is a 4-tuple:
+        #   For the cartpole problem is a 4-tuple:
         #   x position of cart,
         #   x velocity of cart,
         #   angular position of pole,
