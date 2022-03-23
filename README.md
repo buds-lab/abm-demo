@@ -7,8 +7,8 @@ While there are a handful of Jupyter Notebooks, most files will be run on the te
 # Content
 
 - `docs/`: Slides used in the presentation.
-- `openai-gym/`: openAI python examples. Explanation about the contentes is given on slide 22 of the presentation.
-- `comfortlearn/`: Files for custom openAI gym environment for occupant-centric control and ABM
+- `openai-gym/`: openAI python examples. Explanation about the contents is given on slide 22 of the presentation.
+- `comfortlearn/`: Files for custom openAI gym environment for occupant-centric control and ABM. Explanation about the contents is given on slide 34 of the presentation.
 
 # Requirements
 
