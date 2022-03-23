@@ -368,6 +368,7 @@ def vote_by_user(
         for index, row in df_rel.drop(["user_id"], axis=1).iterrows():
             cum_sum = 0
             for ix, el in enumerate(row):
+                el = 0 if np.isnan(el) else el
                 if ix == 1:
                     plt.text(
                         cum_sum + el / 2 if not np.isnan(cum_sum) else el / 2,
