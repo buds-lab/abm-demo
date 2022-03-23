@@ -2,10 +2,13 @@
 
 BUDSLab weekly presentation given by [Matias Quintana](https://matiasquintana.com/)
 
+While there are a handful of Jupyter Notebooks, most files will be run on the terminal.
+
 # Content
 
 - `docs/`: Slides used in the presentation.
 - `openai-gym/`: openAI python examples. Explanation about the contentes is given on slide 22 of the presentation.
+- `comfortlearn`: Files for custom openAI gym environment for occupant-centric control and ABM
 
 # Requirements
 
